@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Messin Around</title>
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-items: stretch;
+            align-items: center;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            justify-items: stretch;
+            align-items: center;
+        }
+
+
+        .grid > div{
+            background: #eee;
+            padding: 1em;
+            border-bottom: rgb(196, 195, 195) groove 1px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            
+        }
+        .container > div:nth-child(odd){
+            background: #ddd;
+            
+        }
+        
+
+        .box{
+            border:1px #444 solid;
+            padding: 1em;
+            margin: 1em;
+            text-align: center;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="grid">
+        <div class="container">
+            <div class="box box1">Home</div>
+            <div class="box box2">Services</div>
+            <div class="box box3">About</div>
+            <div class="box box4">Contact</div>     
+        </div>    
+    </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Grids</title>
+    <style>
+
+        .grid{
+            display:grid;
+            grid-template-columns: 50% 50%;
+            grid-column-gap: 1em;
+            grid-row-gap: 1em;
+        }
+
+
+    .grid > div{
+        background: #eee;
+        padding: 1em;
+    }
+    .grid > div:nth-child(odd){
+        background: #ddd;
+    }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur sed nostrum quis aspernatur recusandae illo ex facilis animi aliquam, quam fugiat totam sapiente nihil id voluptates sunt possimus neque asperiores? Magnam sint aut commodi, placeat odio culpa optio fugit unde temporibus voluptates at exercitationem doloremque consectetur a nobis deleniti nulla suscipit enim quis! Ipsam placeat fugiat eligendi ab consequatur dolores temporibus quaerat voluptatum quam nulla id hic nihil debitis facere neque dignissimos quo laudantium quisquam est omnis, illum vel? Nemo.
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente velit adipisci distinctio doloremque, vitae asperiores. Voluptatum ex quos fugiat perspiciatis explicabo quidem delectus maiores. Iure quisquam dolore saepe nisi similique!
+        </div>
+        <div>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur sed nostrum quis aspernatur recusandae illo ex facilis animi aliquam, quam fugiat totam sapiente nihil id voluptates sunt possimus neque asperiores? Magnam sint aut commodi, placeat odio culpa optio fugit unde temporibus voluptates at exercitationem doloremque consectetur a nobis deleniti nulla suscipit enim quis! Ipsam placeat fugiat eligendi ab consequatur dolores temporibus quaerat voluptatum quam nulla id hic nihil debitis facere neque dignissimos quo laudantium quisquam est omnis, illum vel? Nemo.
+            </div>
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente velit adipisci distinctio doloremque, vitae asperiores. Voluptatum ex quos fugiat perspiciatis explicabo quidem delectus maiores. Iure quisquam dolore saepe nisi similique!
+            </div>
+    </div>
+</body>
+</html>
