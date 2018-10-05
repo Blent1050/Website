@@ -29,7 +29,7 @@ h1{
 } */
 
 /* Styling for container */
-.container{
+.my-container{
     max-width: 898px;
     margin: 10px auto;
 }
@@ -74,7 +74,7 @@ h1{
         font-size: 2em;
         margin: 0;
     }
-    .container{
+    .my-container{
         margin: 0;
     }
     .square{
@@ -93,7 +93,7 @@ h1{
         width: 385px;
         margin: 5px;
     }
-    .container{
+    .my-container{
         width: 100%;
     }
 }
