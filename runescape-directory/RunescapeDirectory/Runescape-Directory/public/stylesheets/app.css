@@ -1,0 +1,25 @@
+
+/* navbar */
+.ui.icon.input>i.link.icon, .ui.menu .item>.input input {
+    color:white;
+}
+#push-down{
+    margin-top:4em;
+}
+
+
+/* Card Styling */
+.ui.form{
+    margin-top: 50px;
+}
+.ui.card a, .ui.cards>.card a{
+    size: 120px 120px;
+}
+.ui.card>:last-child, .ui.cards>.card>:last-child{
+    padding:1em;
+}
+
+.ui.image img, .ui.image svg{
+    height: 150px;
+}
+

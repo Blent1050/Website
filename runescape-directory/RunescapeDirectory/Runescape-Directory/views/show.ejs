@@ -1,0 +1,23 @@
+<% include ./partials/header %>
+<div class='ui raised padded main text container segment'>
+    <div class='ui huge header'><%= item.itemName %></div>
+    <div class='ui top attached'>
+        <div class='item'>
+            <img class='ui centered rounded image' src='<%= item.itemImage %>'>
+            <div class='description'>
+                <p><%-item.itemDescription%></p>
+            </div>
+            <a class='ui orange basic medium button' href='/items/<%= item._id %>/edit'>Edit</a>
+            <form id='delete' action='/items/<%= item._id %>?_method=DELETE' method='POST'>
+                <button class='ui red medium basic button'>DELETE</button>
+            </form>
+            <div>
+                <a class='ui purple basic medium button' href='/items'>Go Back</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<% include ./partials/footer %>

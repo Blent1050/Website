@@ -1,0 +1,27 @@
+<% include ./partials/header %>
+
+    <div class='ui huge header centered'>The Runescape Directory</div>
+    <div class='ui six doubling link cards centered'>
+        <% items.forEach(function(item){ %>
+            <div class='card'>
+                <div class='ui black top attached label'><%= item.itemName %></div>
+                <div class='ui center aligned segment padded fluid'>
+                    <a class='ui small image centered' href='/items/<%=item._id %>'>
+                        <img src='<%= item.itemImage %>'>
+                    </a> 
+                    <div class='center aligned description bordered'>
+                        <p><%-item.itemDescription.substring(0, 30)%>...</p>
+                    </div>
+                <div class='container ui buttons'>
+                    <a class='ui compact orange tiny inverted button fluid' href='/items/<%= item._id %>/edit'>Edit</a>
+                    <form id='delete' action='/items/<%= item._id %>?_method=DELETE' method='POST'>
+                        <button class='ui compact red tiny inverted button fluid'>DELETE</button>
+                    </form> 
+                </div>
+            </div>
+  
+            </div> 
+       <% }) %>
+    </div>
+
+<% include ./partials/footer %>
